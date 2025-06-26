@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-mario {
+  width: 200px;
+}
+.mario-luigi {
+  height: 400px;
+}
+
+p {
+  color: white;
+}
+
+button {
+  color: white;
+  background-color: #c51111;
+  border-radius: 3px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+body {
+  height: 100vh;
+  background-color: #1e1e1e;
+}
+
+.caixa-mae {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+  height: 100vh;
+}
+
+.caixa-principal {
+  width: 40%;
+}
+
+.caixa-video {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+video {
+  width: 100vw;
+}
+
+.mascara {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  position: fixed;
+  top: 0;
+}
+
+.whatsapp {
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 30px;
+}
+
+.header img {
+  height: 60px;
+}
+
+.header a {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #c51111;
+  font-size: 26px;
+  transition: 0.5s ease-in-out;
+}
+
+.formulario-fale-conosco {
+  background-color: white;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  position: fixed;
+  left: -300px;
+  top: 30%;
+  padding: 20px;
+  border-radius: 5px;
+  transition: left 1s ease-in-out;
+}
+
+input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline-color: #18D80f;
+}
+
+textarea {
+  width: 270px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 5px;
+  outline-color: #18D80f;
+}
+
+.mascara-formulario {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  transition: visibility 1s ease-in-out;
+}
+
+.servicos {
+  padding: 50px;
+  background-color: #0a0c10;
+  color: white;
+  text-align: center;
+}
+
+.servicos h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #c51111;
+}
+
+.servico {
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 0 10px #000;
+}
+
+.servico img {
+  width: 80px;
+  height: 80px;
+}
+
+.servico h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  color: #18D80f;
+}
+
+.servico p {
+  color: #e0e0e0;
+}
+
+/* Seção de Serviços */
+.servicos {
+  padding: 50px 20px;
+  background-color: #0a0c10;
+  color: white;
+  text-align: center;
+}
+
+.servicos h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #c51111;
+}
+
+.servico {
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 0 12px #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servico:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #18D80f;
+}
+
+.servico img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background: white;
+  padding: 5px;
+}
+
+.servico h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  color: #18D80f;
+}
+
+.servico p {
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .servico {
+    flex-direction: column;
+    text-align: center;
+  }
+}
